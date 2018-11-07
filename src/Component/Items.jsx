@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import ItemGrid from '../Grid/ItemGrid';
 import Grid from '@material-ui/core/Grid';
 import image2 from '.././Asset/two.jpg';
+import CardItem from './CardItem';
 const styles = theme => ({
   root: {
     ...theme.mixins.gutters(),
@@ -38,18 +39,141 @@ function Items(props) {
     >
       {/* {projectsSorted &&
                     projectsSorted.map((project) => ( */}
-      <ItemGrid  xs={12}sm={12} md={9} lg={3} xl={2}>
-        <Paper className={classes.root} elevation={1}>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+        {/* <Paper className={classes.root} elevation={1}>
           <img src={image2} className={classes.img}/>
           <Typography component="p">
             Paper can be used to build surface or other elements for your application.
         </Typography>
-        </Paper>
+        </Paper> */}
       </ItemGrid>
-
-
-
-      {/* ))} */}
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
+      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
+       <CardItem />
+       </ItemGrid>
     </Grid>
   );
 }
