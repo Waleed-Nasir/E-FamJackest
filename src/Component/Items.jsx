@@ -171,9 +171,6 @@ function Items(props) {
       <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
        <CardItem />
        </ItemGrid>
-      <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
-       <CardItem />
-       </ItemGrid>
     </Grid>
   );
 }

@@ -4,6 +4,8 @@ import './App.css';
 import Appbar from './Component/Appbar';
 import DisplayLock from './Component/DisplayLock';
 import Items from './Component/Items';
+import Paginations from './Component/Pageinate';
+import Footer from './Component/Footer';
 
 class App extends Component {
   render() {
@@ -11,7 +13,9 @@ class App extends Component {
       <div className="App">
       <Appbar/>
       <DisplayLock/>
-      <Items/>
+      {/* <Items/> */}
+      <Paginations />
+      <Footer/>
         {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>

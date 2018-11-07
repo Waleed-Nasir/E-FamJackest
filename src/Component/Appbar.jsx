@@ -16,7 +16,7 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
-import SaveIcon from '@material-ui/icons/Save';
+import ShoppingCart from '@material-ui/icons/ShoppingCart';
 import Button from '@material-ui/core/Button';
 import classNames from 'classnames';
 import { Paper } from '@material-ui/core';
@@ -217,7 +217,7 @@ class PrimarySearchAppBar extends React.Component {
                 </Badge>
               </IconButton>
               <Button variant="contained" color={"secondary"} className={classes.button}>
-        <SaveIcon className={classes.viewCard} />
+        <ShoppingCart className={classes.viewCard} />
          View Card 
       </Button>
               {/* <IconButton

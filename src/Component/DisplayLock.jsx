@@ -19,7 +19,7 @@ const styles = theme => ({
     justifyContent: 'space-around',
     overflow: 'hidden',
     backgroundColor: theme.palette.background.paper,
-    height:650,
+    height:710,
   },
   gridList: {
     marginTop:'100px !important',
