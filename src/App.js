@@ -6,16 +6,24 @@ import DisplayLock from './Component/DisplayLock';
 import Items from './Component/Items';
 import Paginations from './Component/Pageinate';
 import Footer from './Component/Footer';
+import Details from './Component/Details';
 
 class App extends Component {
   render() {
+    const Show =(
+      <DisplayLock/>
+    )
     return (
       <div className="App">
       <Appbar/>
-      <DisplayLock/>
+      <div style={{marginTop:100}}>
+      {/* {Show} */}
       {/* <Items/> */}
-      <Paginations />
+      {/* <Paginations /> */}
+      <Details/>
       <Footer/>
+
+      </div>
         {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>

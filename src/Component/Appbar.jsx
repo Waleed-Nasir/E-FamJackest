@@ -24,7 +24,7 @@ import { Paper } from '@material-ui/core';
 const styles = theme => ({
   root: {
     width: '100%',
-    position:'fixed',
+    // position:'fixed',
     zIndex:1
   },
   grow: {
@@ -99,6 +99,7 @@ const styles = theme => ({
       backgroundColor:'#FF9800',
       display: 'flex',
       justifyContent: "center",
+      borderRadius: 0,
   },
   button:{
       color:'#fff',
@@ -129,6 +130,9 @@ class PrimarySearchAppBar extends React.Component {
   handleMobileMenuClose = () => {
     this.setState({ mobileMoreAnchorEl: null });
   };
+  handelcat =()=>{
+    
+  }
 
   render() {
     const { anchorEl, mobileMoreAnchorEl } = this.state;
@@ -184,7 +188,7 @@ class PrimarySearchAppBar extends React.Component {
 
     return (
       <div className={classes.root}>
-        <AppBar position="static">
+        <AppBar position="fixed">
           <Toolbar>
             <IconButton className={classes.menuButton} color="inherit" aria-label="Open drawer">
               <MenuIcon />
@@ -235,13 +239,13 @@ class PrimarySearchAppBar extends React.Component {
               </IconButton>
             </div>
           </Toolbar>
-        </AppBar>
         <Paper className={classes.cate}>
         <Button  color="primary" className={classes.button}>New Arival</Button>
         <Button  color="primary" className={classes.button}>MEN</Button>
         <Button  color="primary" className={classes.button}>WOMEN</Button>
         <Button  color="primary" className={classes.button}>ABOUT US</Button>
         </Paper>
+        </AppBar>
         {renderMenu}
         {renderMobileMenu}
       </div>
