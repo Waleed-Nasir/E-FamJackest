@@ -6,39 +6,21 @@ import DisplayLock from './Component/DisplayLock';
 import Items from './Component/Items';
 import Paginations from './Component/Pageinate';
 import Footer from './Component/Footer';
-import Details from './Component/Details';
+import AppMean from './Component/AppMean';
+import  {BrowserRouter as Router ,  Route, Link} from 'react-router-dom';
 
 class App extends Component {
   render() {
-    const Show =(
-      <DisplayLock/>
-    )
     return (
-      <div className="App">
-      <Appbar/>
-      <div style={{marginTop:100}}>
-      {/* {Show} */}
-      {/* <Items/> */}
-      {/* <Paginations /> */}
-      <Details/>
-      <Footer/>
-
-      </div>
-        {/* <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header> */}
-      </div>
+      <BrowserRouter>
+      <div>
+        <Route  exact path="/" history={this.props.history} component={''}/>
+        <Route  path="/Men" history={this.props.history} component={''}/>
+        <Route  path="/Women" history={this.props.history} component={''}/>
+        <Route  path="/About-us" history={this.props.history} component={''}/>
+        <Route  path="/New-Arival" history={this.props.history} component={''}/>
+        </div>
+    </BrowserRouter>   
     );
   }
 }

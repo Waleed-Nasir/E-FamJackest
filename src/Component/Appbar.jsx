@@ -139,7 +139,7 @@ class PrimarySearchAppBar extends React.Component {
     const { classes } = this.props;
     const isMenuOpen = Boolean(anchorEl);
     const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
+    const {history} = this.props
     const renderMenu = (
       <Menu
         anchorEl={anchorEl}
@@ -240,10 +240,10 @@ class PrimarySearchAppBar extends React.Component {
             </div>
           </Toolbar>
         <Paper className={classes.cate}>
-        <Button  color="primary" className={classes.button}>New Arival</Button>
-        <Button  color="primary" className={classes.button}>MEN</Button>
-        <Button  color="primary" className={classes.button}>WOMEN</Button>
-        <Button  color="primary" className={classes.button}>ABOUT US</Button>
+        <Button  color="primary" onClick={()=>{history.push('/New-Arival')}} className={classes.button}>New Arival</Button>
+        <Button  color="primary" onClick={()=>{history.push('/Men')}} className={classes.button}>MEN</Button>
+        <Button  color="primary" onClick={()=>{history.push('/Women')}} className={classes.button}>WOMEN</Button>
+        <Button  color="primary" onClick={()=>{history.push('/About-us')}} className={classes.button}>ABOUT US</Button>
         </Paper>
         </AppBar>
         {renderMenu}

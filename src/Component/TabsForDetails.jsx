@@ -146,9 +146,11 @@ const styles = theme => ({
   },
   DecR: {
     display: 'none',
-    width: '75%',
+    width: '100%',
     height: 125,
-    paddingRight: '5%',
+    backgroundColor:'#282c34',
+
+    // paddingRight: '5%',
     [theme.breakpoints.up('sm')]: {
       display: 'inline-block',
     },
@@ -166,6 +168,7 @@ const styles = theme => ({
   DecMR: {
     display: 'inline-block',
     width: '100%',
+    backgroundColor:'#282c34',
     // paddingRight: '10%',
     // marginTop: '40%',
     [theme.breakpoints.up('sm')]: {
@@ -205,9 +208,10 @@ const styles = theme => ({
   },
   button:{
     marginTop:-12  },
-    buttonr:{
-     width:'80%'
-      },
+    // buttonr:{
+    //  width:'80%',
+    //  marginLeft:'10%'
+    //   },
 });
 
 class TabsForDetails extends React.Component {
@@ -380,7 +384,7 @@ else{
                         </IconButton>
                       </div>
                     </div>
-                    <Button variant='raised' color='primary'>Add to Card</Button>
+                    <Button variant='raised' fullWidth color='primary'>Add to Card</Button>
                     {/* <Typography className={classes.title} color="textSecondary" gutterBottom>
           Word of the Day
         </Typography>
@@ -465,7 +469,7 @@ else{
             <Paper className={classes.DecR}>{contant}</Paper>
             <Paper className={classes.DecMR}>{contant}</Paper>
               
-              <Button  variant="contained" color="primary" className={classes.buttonr}>
+              <Button fullWidth variant="contained" color="primary" className={classes.buttonr}>
         Send
         <Send color="secondary" />
       </Button>

@@ -221,15 +221,15 @@ class Paginations extends React.Component {
     }
 
     render() {
-        const { classes } = this.props;
+        const { classes,history } = this.props;
 
         return (
             <Grid    container
             className={classes.container}
             >
-               {this.state.pageOfItems.map(item =>
+               {this.state.pageOfItems.map((item,i) =>
               <ItemGrid  xs={6}sm={4} md={3} lg={2} xl={2}>
-               <CardItem />
+               <CardItem history={history} itemNum={i+1}/>
               </ItemGrid>
              )}<div   className={classes.PageOp}>
                 <Pagination classes={classes} items={this.state.exampleItems} onChangePage={this.onChangePage} />

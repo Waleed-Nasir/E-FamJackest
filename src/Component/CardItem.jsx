@@ -87,7 +87,7 @@ class CardItem extends React.Component {
   };
 
   render() {
-    const { classes } = this.props;
+    const { classes,itemNum,history } = this.props;
 
     return (
       <Card className={classes.card}>
@@ -130,21 +130,14 @@ class CardItem extends React.Component {
             <FavoriteIcon />
           </IconButton>
            <div className={classes.sectionDesktop}>
-           <Button variant="contained" size="small" color="primary" className={classes.button}>
+           <Button onClick={()=>{history.push('/Details'+'/id_'+itemNum)}} variant="contained" size="small" color="primary" className={classes.button}>
           Details
         </Button>
            </div>
           <div className={classes.sectionMobile}>
-          <IconButton
-            className={classnames(classes.expand, {
-              [classes.expandOpen]: this.state.expanded,
-            })}
-            onClick={this.handleExpandClick}
-            aria-expanded={this.state.expanded}
-            aria-label="Show more"
-          >
-            <ExpandMoreIcon />
-          </IconButton>
+          <Button onClick={()=>{history.push('/Details'+'/id_'+itemNum)}} variant="contained" size="small" color="primary" className={classes.button}>
+          Details
+        </Button>
          </div>
         </CardActions>
         {/* <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
